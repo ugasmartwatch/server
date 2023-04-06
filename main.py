@@ -3,7 +3,7 @@ from pydantic import BaseModel
 import pandas as pd
 import sqlite3
 
-app = FastAPI()
+app = FastAPI(root_path="/ugasmartwatch")
 
 @app.get("/")
 async def root():
